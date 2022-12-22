@@ -31,6 +31,18 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* 隱藏下拉選項 */
+        
+        .dropdown-content2 {
+            display: none;
+        }
+        /* 顯示下拉選項 */
+        
+        .dropdown2:hover .dropdown-content2 {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -61,9 +73,15 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Students</a>
                         <div class="dropdown-menu m-0">
                             <a href="project.html" class="dropdown-item">Admission</a>
-                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/jd-admissions" class="dropdown-item">Degree Programs-Bachelor</a>
-                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Degree Programs-Master</a>
-                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">Degree Programs-PhD</a>
+                            <div class="dropdown2 dropdown-item">
+                                <a href="#" class="dropdown-button">Degree Programs</a>
+                                <div class="dropdown-content2">
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/jd-admissions" class="dropdown-item">Bachelor</a>
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Master</a>
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">PhD</a>
+                                </div>
+                            </div>
+
                             <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
                             <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
                             <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
@@ -492,6 +510,17 @@
                 x.style.display = "block";
             } else {
                 x.style.display = "none";
+            }
+        };
+
+        function myFunction3() {
+            var x = document.getElementsByClassName("dropdown-item degree")
+            for (y = 0; y < 4; y++) {
+                if (x[y].style.display === "none") {
+                    x[y].style.display = "block";
+                } else {
+                    x[y].style.display = "none";
+                }
             }
         };
     </script>

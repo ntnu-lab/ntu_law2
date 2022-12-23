@@ -61,7 +61,7 @@
                     vertical-align: top;width:auto;max-width:95% ">　</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"  ></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
@@ -167,8 +167,8 @@
     <!-- Carousel End -->
     <div class="container-fluid  ">
         <section class="row ">
-            <div style="display: flex;justify-content: center;  align-items: center; " style="width:auto;max-width:90%" class=" px-4 pb-4">
-                <video style="width:auto;max-width:90%" autoplay muted loop playsinline>
+            <div style="display: flex;justify-content: center;  align-items: center; " style="width:auto;max-width:80%" class=" px-4 pb-4">
+                <video style="width:auto;max-width:80%" autoplay muted loop playsinline>
                     <source src="./img/highlight.mp4 " type="video/mp4 " onerror="fallback(parentNode) ">
             </video>
             </div>
@@ -315,6 +315,25 @@
                         </div>
                         <h5 class="text-uppercase mb-3 ">臺大法律學院 112學年度 出國交換學生甄選口試時程表</h5>
                         <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mx-auto mb-5 ">
+            <h5 class="display-5 mb-4 " onclick="myFunction3()" style="color: #C0C0C0; ">Former Events (click me)</h5>
+        </div>
+        <div id="myDIV3" style="display: none;">
+            <div class="row g-5 ">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="service-item bg-white d-flex flex-column align-items-center text-center ">
+                        <img style="max-height:300px " class="img-fluid " src="img/2.jpeg " alt=" ">
+                        <div class="service-icon bg-white ">
+                            <i class="fa fa-3x fa-building text-primary "></i>
+                        </div>
+                        <div class="px-4 pb-4 ">
+                            <h5 class="text-uppercase mb-3 ">12.15 WTO國際法律實務論壇 Seminar on WTO Legal Practice</h5>
+                            <a class="btn text-primary " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -521,13 +540,11 @@
         };
 
         function myFunction3() {
-            var x = document.getElementsByClassName("dropdown-item degree")
-            for (y = 0; y < 4; y++) {
-                if (x[y].style.display === "none") {
-                    x[y].style.display = "block";
-                } else {
-                    x[y].style.display = "none";
-                }
+            var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
             }
         };
     </script>

@@ -52,7 +52,8 @@
     background-size: cover;
     background-position: center;" class="container-fluid sticky-top  shadow-sm px-5 pe-lg-0">
         <p style="display: flex;">
-            <a style="margin-left: auto;color: aliceblue;" href="http://www.law.ntu.edu.tw/index.php">中文版 </a> ／ <a style="color: aliceblue;" href="http://www.ntu.edu.tw/" target="_blank">台大首頁</a></p>
+            <a style="margin-left: auto;color: aliceblue;" href="http://www.law.ntu.edu.tw/index.php">中文版 </a> ／ <a style="color: aliceblue;" href="http://www.ntu.edu.tw/" target="_blank">台大首頁</a>
+        </p>
 
         <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
             <a href="index.html" class="navbar-brand">
@@ -320,19 +321,22 @@
             </div>
         </div>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-5 mb-4 " onclick="myFunction3()" style="color: #C0C0C0; ">Former Events (click me)</h5>
+            <h5 class="display-5 mb-4 " onclick="myFunction3()" style="color: #C0C0C0; ">Former NEWS (click me)</h5>
         </div>
         <div id="myDIV3" style="display: none;">
             <div class="row g-5 ">
                 <div class="col-lg-4 col-md-6 ">
-                    <div class="service-item bg-white d-flex flex-column align-items-center text-center ">
-                        <img style="max-height:300px " class="img-fluid " src="img/2.jpeg " alt=" ">
-                        <div class="service-icon bg-white ">
-                            <i class="fa fa-3x fa-building text-primary "></i>
-                        </div>
-                        <div class="px-4 pb-4 ">
-                            <h5 class="text-uppercase mb-3 ">12.15 WTO國際法律實務論壇 Seminar on WTO Legal Practice</h5>
-                            <a class="btn text-primary " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+                    <div class="bg-light ">
+                        <div class="p-4 ">
+                            <div class="d-flex justify-content-between mb-4 ">
+                                <div class="d-flex align-items-center ">
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>02 Dec, 2022</span>
+                                </div>
+                            </div>
+                            <h5 class="text-uppercase mb-3 ">臺大法律學院 112學年度 出國交換學生甄選口試時程表</h5>
+                            <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
                         </div>
                     </div>
                 </div>
@@ -466,6 +470,28 @@
                 </div>
             </div>
         </div>
+        <div class="text-center mx-auto mb-5 ">
+            <h5 class="display-5 mb-4 " onclick="myFunction4()" style="color: #C0C0C0; ">Former SCHOLARSHIP & INTERNSHIP (click me)</h5>
+        </div>
+        <div id="myDIV4" style="display: none;">
+            <div class="row g-5 ">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="bg-light ">
+                        <div class="p-4 ">
+                            <div class="d-flex justify-content-between mb-4 ">
+                                <div class="d-flex align-items-center ">
+                                </div>
+                                <div class="d-flex align-items-center ">
+                                    <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>02 Dec, 2022</span>
+                                </div>
+                            </div>
+                            <h5 class="text-uppercase mb-3 ">「劉得寬教授勵學獎學金」申請</h5>
+                            <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Blog End -->
 
@@ -541,6 +567,15 @@
 
         function myFunction3() {
             var x = document.getElementById("myDIV3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        };
+
+        function myFunction4() {
+            var x = document.getElementById("myDIV4");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

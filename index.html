@@ -59,10 +59,12 @@
 
     <!-- Navbar Start -->
     <div style="background-image: url('./img/mainbgtop.jpg');
-    background-size: cover;
-    background-position: center;" class="container-fluid sticky-top  shadow-sm px-5 pe-lg-0">
+    background-attachment:fixed;
+    background-position: top;
+    background-repeat: no-repeat;" class="container-fluid sticky-top  shadow-sm px-5 pe-lg-0">
         <p style="display: flex;">
             <a style="margin-left: auto;color: aliceblue;" href="http://www.law.ntu.edu.tw/index.php">中文版 </a> ／ <a style="color: aliceblue;" href="http://www.ntu.edu.tw/" target="_blank">台大首頁</a>
+            <input style="margin-left: 10px;margin-right:10px" type="text" name="keyword" placeholder="search">
         </p>
 
         <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
@@ -71,10 +73,10 @@
                     </i> <img src="./img/logo.png" style="display: inline-block;
                     vertical-align: top;width:auto;max-width:93% ">　</h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"  ></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse" style="background-color:rgb(254, 255, 255)">
                 <div class="navbar-nav ms-auto py-0">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;">About</a>
@@ -159,7 +161,7 @@
                 <div class="service-item bg-white d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/2.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-building text-primary "></i>
+                        <i class="fa fa-3x  fa-calendar text-primary " aria-hidden="true"></i>
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">12.15 WTO國際法律實務論壇 Seminar on WTO Legal Practice</h5>
@@ -171,7 +173,7 @@
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/index.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-home text-primary "></i>
+                        <i class="fa fa-3x  fa-calendar text-primary "></i>
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">12.14客座教授陳建霖專題演講</h5>
@@ -183,7 +185,7 @@
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/3.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-drafting-compass text-primary "></i>
+                        <i class="fa fa-3x  fa-calendar text-primary "></i>
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">12/12 "亞洲大未來:經濟整合與全球典範轉移的新趨勢 " 新書發表會暨國際職涯座談</h5>
@@ -202,7 +204,7 @@
                     <div class="service-item bg-white d-flex flex-column align-items-center text-center ">
                         <img style="max-height:300px " class="img-fluid " src="img/2.jpeg " alt=" ">
                         <div class="service-icon bg-white ">
-                            <i class="fa fa-3x fa-building text-primary "></i>
+                            <i class="fa fa-3x fa-calendar text-primary "></i>
                         </div>
                         <div class="px-4 pb-4 ">
                             <h5 class="text-uppercase mb-3 ">12.15 WTO國際法律實務論壇 Seminar on WTO Legal Practice</h5>
@@ -214,7 +216,7 @@
                     <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                         <img style="max-height:300px " class="img-fluid " src="img/index.jpeg " alt=" ">
                         <div class="service-icon bg-white ">
-                            <i class="fa fa-3x fa-home text-primary "></i>
+                            <i class="fa fa-3x fa-calendar text-primary "></i>
                         </div>
                         <div class="px-4 pb-4 ">
                             <h5 class="text-uppercase mb-3 ">12.14客座教授陳建霖專題演講</h5>
@@ -226,7 +228,7 @@
                     <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                         <img style="max-height:300px " class="img-fluid " src="img/3.jpeg " alt=" ">
                         <div class="service-icon bg-white ">
-                            <i class="fa fa-3x fa-drafting-compass text-primary "></i>
+                            <i class="fa fa-3x fa-calendar text-primary "></i>
                         </div>
                         <div class="px-4 pb-4 ">
                             <h5 class="text-uppercase mb-3 ">12/12 "亞洲大未來:經濟整合與全球典範轉移的新趨勢 " 新書發表會暨國際職涯座談</h5>
@@ -292,6 +294,7 @@
                 </div>
             </div>
         </div>
+        <p></p>
         <div class="text-center mx-auto mb-5 ">
             <h5 class="display-7 mb-4 " onclick="myFunction3()" style="color: #C0C0C0; ">Former NEWS (click me)</h5>
         </div>
@@ -328,7 +331,7 @@
                         <img style="height:250px " class="img-fluid " src="img/4.jpeg " alt=" ">
                     </div>
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-building text-primary "></i>
+                        <i class="fa fa-3x   fa-graduation-cap text-primary "></i>
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">賀!2022第13屆校際國際人道法模擬法庭競賽，本院代表隊榮獲團體賽冠軍，將代表臺灣參加亞太區域賽</h5>
@@ -343,9 +346,9 @@
                     </div>
 
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-home text-primary "></i>
+                        <i class="fa fa-3x   fa-graduation-cap text-primary "></i>
                     </div>
-                    <div class="px-4 pb-4 ">
+                    <div class="px-4 pb-4  ">
                         <h5 class="text-uppercase mb-3 ">賀!本院勇奪110學年度臺大盃男籃冠軍!</h5>
                         <a class="btn text-primary " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
                     </div>
@@ -357,7 +360,7 @@
                         <img style="height:250px " class="img-fluid " src="img/6.jpeg " alt=" ">
                     </div>
                     <div class="service-icon bg-white ">
-                        <i class="fa fa-3x fa-drafting-compass text-primary "></i>
+                        <i class="fa fa-3x   fa-graduation-cap text-primary "></i>
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">本院代表隊參與2022年第二十屆John H. Jackson WTO模擬法庭辯論賽世界賽取得佳績</h5>
@@ -378,7 +381,7 @@
                             <img style="height:250px " class="img-fluid " src="img/6.jpeg " alt=" ">
                         </div>
                         <div class="service-icon bg-white ">
-                            <i class="fa fa-3x fa-drafting-compass text-primary "></i>
+                            <i class="fa fa-3x   fa-graduation-cap text-primary "></i>
                         </div>
                         <div class="px-4 pb-4 ">
                             <h5 class="text-uppercase mb-3 ">本院代表隊參與2022年第二十屆John H. Jackson WTO模擬法庭辯論賽世界賽取得佳績</h5>
@@ -575,7 +578,7 @@
             var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
 
             var index = 0,
-                time = 3000;
+                time = 2000;
             slides[index].classList.add('active');
 
             setInterval(() => {
@@ -587,6 +590,12 @@
                 slides[index].classList.add('active');
 
             }, time);
+        };
+
+        function function5() {
+            function showDiv() {
+                document.getElementById("navbarCollapse").style.display = "block";
+            }
         }
     </script>
 </body>

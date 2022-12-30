@@ -70,11 +70,15 @@
             <a class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
                     </i> <img src="./img/logo.png" style="display: inline-block;
-                    vertical-align: top;width:auto;max-width:93% ">　</h1>
+                    vertical-align: top;width:auto;max-width:90% ">
+                    <button style="padding:0;display:inline-block;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"  ></span>
+                    </button>
+                </h1>
             </a>
-            <button onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <!-- <button style="padding:0" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"  ></span>
-            </button>
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarCollapse" style="background-color:rgb(254, 255, 255)">
                 <div class="navbar-nav ms-auto py-0">
                     <div class="nav-item dropdown">
@@ -196,7 +200,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="myFunction()" style="color: #C0C0C0; ">Read more (click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun()" style="color: #C0C0C0; ">Read more (click me)</h5>
         </div>
         <div id="myDIV" style="display: none;">
             <div class="row g-5 ">
@@ -296,7 +300,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="myFunction3()" style="color: #C0C0C0; ">Read more(click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun3()" style="color: #C0C0C0; ">Read more(click me)</h5>
         </div>
         <div id="myDIV3" style="display: none;">
             <div class="row g-5 ">
@@ -371,7 +375,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="myFunction2()" style="color: #C0C0C0; ">Read more (click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun2()" style="color: #C0C0C0; ">Read more (click me)</h5>
         </div>
         <div id="myDIV2" style="display: none; ">
             <div class="row g-5 ">
@@ -447,7 +451,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="myFunction4()" style="color: #C0C0C0;size:  ">Read more(click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun4()" style="color: #C0C0C0;size:  ">Read more(click me)</h5>
         </div>
         <div id="myDIV4" style="display: none;">
             <div class="row g-5 ">
@@ -536,7 +540,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js "></script>
     <script>
-        function myFunction() {
+        function readmorefun() {
             var x = document.getElementById("myDIV");
             if (x.style.display === "none") {
                 x.style.display = "block";
@@ -545,7 +549,7 @@
             }
         };
 
-        function myFunction2() {
+        function readmorefun2() {
             var x = document.getElementById("myDIV2");
             if (x.style.display === "none") {
                 x.style.display = "block";
@@ -554,7 +558,7 @@
             }
         };
 
-        function myFunction3() {
+        function readmorefun3() {
             var x = document.getElementById("myDIV3");
             if (x.style.display === "none") {
                 x.style.display = "block";
@@ -563,7 +567,7 @@
             }
         };
 
-        function myFunction4() {
+        function readmorefun4() {
             var x = document.getElementById("myDIV4");
             if (x.style.display === "none") {
                 x.style.display = "block";

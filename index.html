@@ -203,7 +203,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun()" style="color: #C0C0C0; ">Read more (click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun('myDIV')" style="color: #C0C0C0; ">Read more (click me)</h5>
         </div>
         <div id="myDIV" style="display: none;">
             <div class="row g-5 ">
@@ -303,7 +303,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun3()" style="color: #C0C0C0; ">Read more(click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun('myDIV3')" style="color: #C0C0C0; ">Read more(click me)</h5>
         </div>
         <div id="myDIV3" style="display: none;">
             <div class="row g-5 ">
@@ -378,7 +378,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun2()" style="color: #C0C0C0; ">Read more (click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun('myDIV2')" style="color: #C0C0C0; ">Read more (click me)</h5>
         </div>
         <div id="myDIV2" style="display: none; ">
             <div class="row g-5 ">
@@ -454,7 +454,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun4()" style="color: #C0C0C0;size:  ">Read more(click me)</h5>
+            <h5 class="display-7 mb-4 " onclick="readmorefun4('myDIV4')" style="color: #C0C0C0;size:  ">Read more(click me)</h5>
         </div>
         <div id="myDIV4" style="display: none;">
             <div class="row g-5 ">
@@ -543,35 +543,8 @@
     <!-- Template Javascript -->
     <script src="js/main.js "></script>
     <script>
-        function readmorefun() {
-            var x = document.getElementById("myDIV");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        };
-
-        function readmorefun2() {
-            var x = document.getElementById("myDIV2");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        };
-
-        function readmorefun3() {
-            var x = document.getElementById("myDIV3");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        };
-
-        function readmorefun4() {
-            var x = document.getElementById("myDIV4");
+        function readmorefun(div) {
+            var x = document.getElementById(div);
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {

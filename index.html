@@ -52,24 +52,45 @@
         [data-component="slideshow"] .slide.active {
             display: block;
         }
+        
+        .container-fluid.shadow-sm {
+            border-top: #5b0f12 solid 10px;
+            position: relative;
+        }
+        
+        .container-fluid.shadow-sm.px-5::after {
+            content: "";
+            background: #e5c779;
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Navbar Start -->
-    <div style="background-image: url('./img/mainbgtop.jpg'); background-attachment: scroll;
-    background-position: top;background-size: cover;
-    background-repeat: no-repeat;" class="container-fluid sticky-top  shadow-sm px-5 pe-lg-0">
-        <p style="display: flex;">
-            <a style="margin-left: auto;color: aliceblue;" href="http://www.law.ntu.edu.tw/index.php">中文版 </a> ／ <a style="color: aliceblue;" href="http://www.ntu.edu.tw/" target="_blank">台大首頁</a>
-            <input style="margin-left: 10px;margin-right:10px;width:100px" type="text" name="keyword" placeholder="search">
+    <!-- style="background-image: url('./img/mainbgtop.jpg'); background-attachment: scroll;
+    background-position: top;background-size: cover;background-repeat: no-repeat;" -->
+    <div class="container-fluid shadow-sm px-5 pe-lg-0">
+        <!-- sticky-top -->
+        <p style="display: flex;margin-bottom:0;padding: 10px">
+            <a style="margin-left: auto;padding:10px" href="http://www.ntu.edu.tw/" target="_blank">NTU  </a> <a href="http://www.law.ntu.edu.tw/index.php" style="padding:10px">正體中文  </a> <a href="" style="padding:10px">搜尋</a>
+            <!-- <i class="fa fa-3x  fa-calendar text-primary "></i> -->
         </p>
-        <img>
-        <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
             <a class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
-                    </i> <img src="./img/logo.png" style="display: inline-block;
+                    </i>
+                    <img src="./img/logo.png" style="display: inline-block;
                     vertical-align: top;width:auto;max-width:90% ">
                     <!-- <button style="padding:0;display:inline-block;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"  ></span>
@@ -146,7 +167,6 @@
 
     </div>
     <!-- Navbar End -->
-    <p>您目前位置：英文</p>
     <div class="container-fluid  ">
         <section class="row ">
             <div style="display: flex;justify-content: center;  align-items: center; " style="width:auto;max-width:80%" class=" px-4 pb-4">
@@ -505,27 +525,44 @@
         </div>
     </div>
     <!-- Footer Start -->
-    <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5 ">
-        <div class="row g-5 ">
-            <div class="col-lg-6 pe-lg-5 ">
-                <p><i class="fa fa-map-marker-alt me-2 "></i>No.1, Sec. 4, Roosevelt Road, </p>
-                <p>Taipei City, 10617, Taiwan, R.O.C. </p>
+    <div class="container-fluid py-6 px-5 bg-dark bg-light-radial ">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 ">
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
                 <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
                 <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
                 <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 ">
                 <p>2022 All Rights Reserved, College of Law, National Taiwan University
                 </p>
                 <p class="mb-0 ">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p>
             </div>
-            <div class="col-lg-6 ps-lg-5 ">
+        </div>
+    </div>
+    <!-- <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5 ">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 ">
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 ">
+                <p>2022 All Rights Reserved, College of Law, National Taiwan University
+                </p>
+                <p class="mb-0 ">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p>
+            </div>
+            <!-- <div class="col-lg-6 ps-lg-5 ">
                 <div class="row g-5 ">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.144502851542!2d121.53749795896061!3d25.017341928280242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989fe322ea9%3A0x21750404ee1d7f66!2z5ZyL56uL6Ie654Gj5aSn5a24!5e0!3m2!1szh-TW!2sjp!4v1671422648744!5m2!1szh-TW!2sjp "
                         width="600 " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
                 </div>
-            </div>
-        </div>
+            </div> -->
     </div>
-
+    </div> -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

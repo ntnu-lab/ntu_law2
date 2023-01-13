@@ -58,6 +58,21 @@
             position: relative;
         }
         
+        .first {
+            border-top: #5b0f12 solid 10px;
+            position: relative;
+        }
+        
+        .first::after {
+            content: "";
+            background: #e5c779;
+            width: 100%;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
         .container-fluid.shadow-sm.px-5::after {
             content: "";
             background: #e5c779;
@@ -540,30 +555,10 @@
             </div>
         </div>
     </div>
-    <!-- <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5 ">
-        <div class="row g-12 ">
-            <div class="col-lg-6 pe-lg-6 ">
-                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
-                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
-                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
-                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
-            </div>
-            <div class="col-lg-6 pe-lg-6 ">
-                <p>2022 All Rights Reserved, College of Law, National Taiwan University
-                </p>
-                <p class="mb-0 ">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p>
-            </div>
-            <!-- <div class="col-lg-6 ps-lg-5 ">
-                <div class="row g-5 ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.144502851542!2d121.53749795896061!3d25.017341928280242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989fe322ea9%3A0x21750404ee1d7f66!2z5ZyL56uL6Ie654Gj5aSn5a24!5e0!3m2!1szh-TW!2sjp!4v1671422648744!5m2!1szh-TW!2sjp "
-                        width="600 " height="350 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
-                </div>
-            </div> -->
-    </div>
-    </div> -->
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <p class="first"></p>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>

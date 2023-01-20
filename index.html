@@ -33,12 +33,9 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-        /* 隱藏下拉選項 */
-        
         .dropdown-content2 {
             display: none;
         }
-        /* 顯示下拉選項 */
         
         .dropdown2:hover .dropdown-content2 {
             display: block;
@@ -132,6 +129,11 @@
             text-decoration: none;
             background-color: #5E005E;
         }
+        
+        .footer-content p {
+            color: #444444;
+            font-size: 16px;
+        }
     </style>
 </head>
 
@@ -139,17 +141,15 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid shadow-sm px-5 pe-lg-0">
-        <!-- sticky-top -->
         <p style="display: flex;margin-bottom:0;padding: 5px">
-            <a style="margin-left: auto;padding:5px;" href="http://www.ntu.edu.tw/" target="_blank">NTU  </a> <a href="http://www.law.ntu.edu.tw/index.php" style="padding:5px">正體中文  </a> <a href="https://cse.google.com/cse?cx=011987122760880416627%3Azsghqazzvk4"
-                style="padding:5px"><i class="fa fa-1x  fa-search text-primary "></i> </a>
+            <a style="margin-left: auto;padding:5px;" href="http://www.ntu.edu.tw/" target="_blank">NTU Contact  </a> <a href="https://cse.google.com/cse?cx=011987122760880416627%3Azsghqazzvk4" style="padding:5px"><i class="fa fa-1x  fa-search text-primary "></i> </a>
+            <a href="http://www.law.ntu.edu.tw/index.php" style="padding:5px">| 正體中文 </a>
         </p>
         <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
             <a class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
                     </i>
-                    <!-- <img src="./img/logo.jpg" style="display: inline-block;vertical-align: top;width:auto;max-width:20% "> -->
-                    <img src="./img/logo3.png" style="display: inline-block;vertical-align: top;width:auto;max-width:80%">
+                    <img src="./img/logo3.png" style="display: inline-block;vertical-align: top;width:auto;max-width:100%">
                     <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"  ></span>
                     </button>
@@ -222,16 +222,9 @@
     <div class="container-fluid  ">
         <section class="row ">
             <div style="display: flex;justify-content: center;  align-items: center; padding:0%">
-                <!-- style="width:auto;max-width:80%" class=" px-4 pb-4" -->
-                <video style="  left:0;
-                top:0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;" autoplay controls autoplay> 
-                <!-- autoplay muted loop playsinline -->
+                <video style="left:0; top:0;width: 100%;height: 100%;object-fit: cover;" muted autoplay> 
                     <source src="./img/highlight.mp4 " type="video/mp4 " onerror="fallback(parentNode) ">
-            </video>
-                <!-- <source src="./img/highlight.mp4 " type="video/mp4 " onerror="fallback(parentNode) "> -->
+                </video>
             </div>
         </section>
     </div>
@@ -240,10 +233,10 @@
     <!-- Services Start -->
     <div class="container-fluid bg-light py-6 px-5 " id="event">
         <div class="text-center mx-auto mb-5 " style="max-width: 600px; ">
-            <h1 class="display-8 text-uppercase mb-4 "> <span class="text-primary ">Events</span> </h1>
+            <h1 class="display-8 text-uppercase mb-4 text-center-name"> <span class="text-primary ">Events</span> </h1>
         </div>
         <div class="row g-5 ">
-            <div class="col-lg-4 col-md-6 ">
+            <div class="col-lg-3 col-md-6 ">
                 <div class="service-item bg-white d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/2.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
@@ -255,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 ">
+            <div class="col-lg-3 col-md-6 ">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/index.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
@@ -267,7 +260,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 ">
+            <div class="col-lg-3 col-md-6 ">
                 <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
                     <img style="max-height:300px " class="img-fluid " src="img/3.jpeg " alt=" ">
                     <div class="service-icon bg-white ">
@@ -275,6 +268,18 @@
                     </div>
                     <div class="px-4 pb-4 ">
                         <h5 class="text-uppercase mb-3 ">12/12 "亞洲大未來:經濟整合與全球典範轉移的新趨勢 " 新書發表會暨國際職涯座談</h5>
+                        <a class="btn text-primary " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center ">
+                    <img style="max-height:300px " class="img-fluid " src="img/3.jpeg " alt=" ">
+                    <div class="service-icon bg-white ">
+                        <i class="fa fa-3x  fa-calendar text-primary "></i>
+                    </div>
+                    <div class="px-4 pb-4 ">
+                        <h5 class="text-uppercase mb-2 ">12/12 "亞洲大未來:經濟整合與全球典範轉移的新趨勢 " 新書發表會暨國際職涯座談</h5>
                         <a class="btn text-primary " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
                     </div>
                 </div>
@@ -331,7 +336,7 @@
     <!-- Blog Start -->
     <div class="container-fluid py-6 px-5 ">
         <div class="text-center mx-auto mb-5 " style="max-width: 600px; ">
-            <h1 class="display-8 text-uppercase mb-4 ">Latest <span class="text-primary ">News</span></h1>
+            <h1 class="display-8 text-uppercase mb-4 text-center-name">Latest <span class="text-primary ">News</span></h1>
         </div>
         <div class="row g-5 ">
             <div class="col-lg-4 col-md-6 ">
@@ -408,7 +413,7 @@
     <!-- Services Start -->
     <div class="container-fluid bg-light py-6 px-5 ">
         <div class="text-center mx-auto mb-5 " style="max-width: 600px; ">
-            <h1 class="display-8 text-uppercase mb-4 "> <span class="text-primary ">Congratulations </span> </h1>
+            <h1 class="display-8 text-uppercase mb-4 text-center-name"> <span class="text-primary ">Congratulations </span> </h1>
         </div>
         <div class="row g-5 ">
             <div class="col-lg-4 col-md-6 ">
@@ -479,11 +484,7 @@
         </div>
     </div>
     <!-- Services End -->
-    <!-- Blog Start -->
-    <div class="container-fluid py-6 px-5 ">
-        <div class="text-center mx-auto mb-5 " style="max-width: 600px; ">
-            <h1 class="display-8 text-uppercase mb-4 "> <span class="text-primary ">Scholarship & Internship </span></h1>
-        </div>
+    <div id="myDIV4" style="display: none;">
         <div class="row g-5 ">
             <div class="col-lg-4 col-md-6 ">
                 <div class="bg-light ">
@@ -492,37 +493,7 @@
                             <div class="d-flex align-items-center ">
                             </div>
                             <div class="d-flex align-items-center ">
-                                <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>27 Oct, 2022</span>
-                            </div>
-                        </div>
-                        <h5 class="text-uppercase mb-3 ">【111-1法律學院 外籍生(含港澳、僑陸生)課業輔導助理(勞雇型)徵聘公告】</h5>
-                        <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-                <div class="bg-light ">
-                    <div class="p-4 ">
-                        <div class="d-flex justify-content-between mb-4 ">
-                            <div class="d-flex align-items-center ">
-                            </div>
-                            <div class="d-flex align-items-center ">
-                                <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>27 Oct, 2022</span>
-                            </div>
-                        </div>
-                        <h5 class="text-uppercase mb-3 ">斯洛伐克國家獎學金計畫</h5>
-                        <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 ">
-                <div class="bg-light ">
-                    <div class="p-4 ">
-                        <div class="d-flex justify-content-between mb-4 ">
-                            <div class="d-flex align-items-center ">
-                            </div>
-                            <div class="d-flex align-items-center ">
-                                <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>11 Oct, 2022</span>
+                                <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>02 Dec, 2022</span>
                             </div>
                         </div>
                         <h5 class="text-uppercase mb-3 ">「劉得寬教授勵學獎學金」申請</h5>
@@ -531,40 +502,18 @@
                 </div>
             </div>
         </div>
-        <p></p>
-        <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun4('myDIV4')" style="color: #C0C0C0;size:  ">Read more(click me)</h5>
-        </div>
-        <div id="myDIV4" style="display: none;">
-            <div class="row g-5 ">
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="bg-light ">
-                        <div class="p-4 ">
-                            <div class="d-flex justify-content-between mb-4 ">
-                                <div class="d-flex align-items-center ">
-                                </div>
-                                <div class="d-flex align-items-center ">
-                                    <span class="ms-3 "><i class="far fa-calendar-alt text-primary me-2 "></i>02 Dec, 2022</span>
-                                </div>
-                            </div>
-                            <h5 class="text-uppercase mb-3 ">「劉得寬教授勵學獎學金」申請</h5>
-                            <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
     <!-- Blog End -->
     <div id="slideshow-example" data-component="slideshow" class="container-fluid ">
         <div style="display: flex;justify-content: center;  align-items: center; " style="width:auto;max-width:80%" class=" px-4 pb-4">
             <div role="list">
-                <div class="slide">
+                <!-- <div class="slide">
                     <img src="./img/h1.jpeg" alt="" style="max-width:100%;height:auto;">
                 </div>
                 <div class="slide">
                     <img src="./img/h2.jpeg" alt="" style="max-width:100%;height:auto;">
-                </div>
+                </div> -->
                 <div class="slide">
                     <img src="./img/h3.jpeg" alt="" style="max-width:100%;height:auto;">
                 </div>
@@ -586,17 +535,21 @@
     <!-- Footer Start -->
     <div class="container-fluid py-6 px-5  " style="background-color: #E0E0E0;">
         <div class="row g-12 ">
-            <div class="col-lg-6 pe-lg-6 ">
-                <p style="color: #272727;"><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
-                <p style="color: #272727;"><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
-                <p style="color: #272727;"><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
-                <p style="color: #272727;"><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Office Hours</p>
+                <p>Monday – Friday [ Taiwan Time ] 9am - 5pm </p>
+                <p style="color: #5E005E ;">Consultation Hours</p>
+                <p>Monday – Friday Noon - 4:30pm </p>
             </div>
-            <div class="col-lg-6 pe-lg-6 ">
-                <p style="color: #272727;">2022 All Rights Reserved, College of Law, National Taiwan University
-                </p>
-                <p class="mb-0 " style="color: #272727;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Contact</p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
             </div>
+            <p style="color: #444444;">© 2023 All Rights Reserved, College of Law, National Taiwan University</p>
+            <!-- <p class="mb-0 " style="color: #444444;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p> -->
         </div>
     </div>
 
@@ -607,14 +560,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
-    <script src="lib/easing/easing.min.js "></script>
+    <!-- <script src="lib/easing/easing.min.js "></script>
     <script src="lib/waypoints/waypoints.min.js "></script>
     <script src="lib/owlcarousel/owl.carousel.min.js "></script>
     <script src="lib/tempusdominus/js/moment.min.js "></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js "></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js "></script>
     <script src="lib/isotope/isotope.pkgd.min.js "></script>
-    <script src="lib/lightbox/js/lightbox.min.js "></script>
+    <script src="lib/lightbox/js/lightbox.min.js "></script> -->
 
     <!-- Template Javascript -->
     <script src="js/main.js "></script>

@@ -288,3 +288,7 @@ a {
 .text-secondary {
     color: #e5c779 !important
 }
+
+.text-center-name {
+    font-size: 2rem;
+}

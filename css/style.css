@@ -157,12 +157,12 @@
 
 .service-item .service-icon {
     margin-top: -50px;
-    width: 100px;
-    height: 100px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
+    border-radius: 55px;
 }
 
 .service-item .service-icon i {
@@ -170,7 +170,7 @@
 }
 
 .service-item:hover .service-icon i {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .portfolio-item {

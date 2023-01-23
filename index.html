@@ -130,6 +130,18 @@
             background-color: #5E005E;
         }
         
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            color: #E0E0E0;
+            border-top: .3em solid;
+            border-right: .3em solid transparent;
+            border-bottom: 0;
+            border-left: .3em solid transparent
+        }
+        
         .footer-content p {
             color: #444444;
             font-size: 16px;
@@ -152,6 +164,11 @@
         .container-fluid-content i {
             font-size: 1.2rem;
         }
+        
+        .search-div a {
+            padding: 5px;
+            font-size: 15px;
+        }
     </style>
 </head>
 
@@ -159,15 +176,18 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid shadow-sm px-5 pe-lg-0">
-        <p style="display: flex;margin-bottom:0;padding: 5px">
-            <a style="margin-left: auto;padding:5px;" href="http://www.ntu.edu.tw/" target="_blank">NTU Contact  </a> <a href="https://cse.google.com/cse?cx=011987122760880416627%3Azsghqazzvk4" style="padding:5px"><i class="fa fa-1x  fa-search text-primary "></i> </a>
-            <a href="http://www.law.ntu.edu.tw/index.php" style="padding:5px">| 正體中文 </a>
-        </p>
+        <div style="display: flex;margin-bottom:0;justify-content: center;align-items:center;padding:1%">
+            <div class="search-div">
+                <a style="margin-left: auto;" href="http://www.ntu.edu.tw/" target="_blank">NTU Contact  </a>
+                <a href="https://cse.google.com/cse?cx=011987122760880416627%3Azsghqazzvk4"><i class="fa fa-1x  fa-search text-primary "></i> </a>
+                <a href="http://www.law.ntu.edu.tw/index.php">| 正體中文 </a>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;">
             <a class="navbar-brand">
                 <h1 class="m-0 display-4 text-uppercase text-white">
                     </i>
-                    <img src="./img/logo.png" style="display: inline-block;vertical-align: top;width:auto;max-height:20%;max-width:80%">
+                    <img src="./img/logo.png" style="display: inline-block;vertical-align: top;width:auto;max-height:20%;max-width:80%;padding-left:10%">
                     <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"  ></span>
                     </button>
@@ -306,8 +326,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun('myDIV')" style="color: #C0C0C0; ">Read more (click me)</h5>
-            <a class="text-uppercase fw-bold " href=" ">Read More <i class="bi bi-arrow-right "></i></a>
+            <a class="btn text-primary" onclick="readmorefun('myDIV')" style="color: #C0C0C0; ">Read more <i class="bi bi-arrow-right "></i></a>
         </div>
         <div id="myDIV">
             <div class="row g-5 ">
@@ -482,7 +501,7 @@
         </div>
         <p></p>
         <div class="text-center mx-auto mb-5 ">
-            <h5 class="display-7 mb-4 " onclick="readmorefun('myDIV2')" style="color: #C0C0C0; ">Read more (click me)</h5>
+            <a class="btn text-primary" onclick="readmorefun('myDIV2')" style="color: #C0C0C0; ">Read more <i class="bi bi-arrow-right "></i></a>
         </div>
         <div id="myDIV2">
             <div class="row g-5 ">

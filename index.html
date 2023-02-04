@@ -6,10 +6,6 @@
     <title>College of Law, National Taiwan University　</title>
     <meta content="College of Law, National Taiwan University" name="keywords">
     <meta content="College of Law, National Taiwan University" name="description">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -35,10 +31,12 @@
 <body>
 
     <!-- Navbar Start -->
-    <div class="container-fluid shadow-sm px-5 pe-lg-0">
+    <div class="container-fluid shadow-sm px-5 pe-lg-0" style="display: flex;
+    flex-direction: column;
+    align-items: flex-end;">
         <div style="display: flex;margin-bottom:0;justify-content: right;padding:1%">
             <div class="search-div">
-                <a style="margin-left: auto;padding-right: 10px;" href="http://www.ntu.edu.tw/" target="_blank">NTU  </a>
+                <a style="margin-left: auto;padding-right: 10px;" href="https://www.ntu.edu.tw/english/" target="_blank">NTU  </a>
                 <a href="#">Contact</a>
                 <a><i  class="fa fa-1x  fa-search text-primary "></i> </a>
                 <!-- onclick="readmorefun('search')" -->
@@ -70,8 +68,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">About</a>
                         <div class="dropdown-menu m-0">
-                            <a href="http://www.law.ntu.edu.tw/index.php/about/message-from-the-dean" class="dropdown-item">Message from the Dean</a>
-                            <a href="http://www.law.ntu.edu.tw/index.php/about/history-development" class="dropdown-item">History</a>
+                            <a href="./message-from-the-dean.html" class="dropdown-item">Message from the Dean</a>
+                            <a href="./history-development.html" class="dropdown-item">History</a>
                             <a href="http://www.law.ntu.edu.tw/index.php/full-time-professor" class="dropdown-item">Faculty</a>
                             <a href="http://www.law.ntu.edu.tw/index.php/peoples/administrators" class="dropdown-item">Staff</a>
                         </div>
@@ -80,15 +78,17 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Students</a>
                         <div class="dropdown-menu m-0">
                             <a href="https://oia.ntu.edu.tw/agreement/unit/college/44" class="dropdown-item">Admission</a>
-                            <div class="dropdown2 dropdown-item">
+                            <!-- <div class="dropdown2 dropdown-item">
                                 <a href="#" class="dropdown-button " style="color: black;font-size: 1rem;">Degree Programs▼</a>
                                 <div class="dropdown-content2">
-                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/jd-admissions" class="dropdown-item">Bachelor</a>
-                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Master</a>
-                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">PhD</a>
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/jd-admissions" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Master of Laws（LL.M.）</a>
+                                    <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
                                 </div>
-                            </div>
-
+                            </div> -->
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/jd-admissions" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Master of Laws（LL.M.）</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
                             <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
                             <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
                             <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
@@ -133,7 +133,7 @@
         <section class="row ">
             <div style="display: flex;justify-content: center;  align-items: center; padding:0%">
                 <video style="left:0; top:0;width: 100%;height: 100%;object-fit: cover;" muted autoplay> 
-                    <source src="./img/highlight.mp4 " type="video/mp4 " onerror="fallback(parentNode) ">
+                    <source src="./img/highlight.mp4" type="video/mp4 " onerror="fallback(parentNode) ">
                 </video>
             </div>
         </section>
@@ -423,7 +423,7 @@
             </div>
             <div class="col-lg-6 pe-lg-6 footer-content">
                 <p style="color: #5E005E ;">Contact</p>
-                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://goo.gl/maps/1nNjG6nmjFYcFkRf8 ">(MAP)</a></p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://www.google.com.tw/maps/search/ntu+law/@25.0202386,121.5420263,17z/data=!3m1!4b1?hl=en ">(MAP)</a></p>
                 <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
                 <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
                 <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
@@ -438,10 +438,10 @@
     <p class="first"></p>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
     <!-- Template Javascript -->
-    <script src="js/main.js "></script>
+    <!-- <script src="js/main.js "></script> -->
 
     <script>
         function searchvaluefun() {

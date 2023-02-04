@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>College of Law, National Taiwan University　</title>
+    <meta content="College of Law, National Taiwan University" name="keywords">
+    <meta content="College of Law, National Taiwan University" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .itemFullText {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid shadow-sm px-5 pe-lg-0" style="display: flex;
+     flex-direction: column;
+     align-items: flex-end;">
+        <div style="display: flex;margin-bottom:0;justify-content: right;padding:1%">
+            <div class="search-div">
+                <a style="margin-left: auto;padding-right: 10px;" href="https://www.ntu.edu.tw/english/" target="_blank">NTU  </a>
+                <a href="#">Contact</a>
+                <a><i  class="fa fa-1x  fa-search text-primary "></i> </a>
+                <a href="http://www.law.ntu.edu.tw/index.php">| 正體中文 </a>
+            </div>
+        </div>
+        <div class="col-sm-3" id="search" style="display:none;">
+            <div class="w-30">
+                <div class="input-group" style="position: absolute;width:40%;right: 5%;top:55%;z-index:999">
+                    <input type="text" id="search-val" class="form-control border-light" style="padding: 15px 20px;" placeholder=""><button class="btn btn-primary px-3" onclick="searchvaluefun()">Search </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;display: flex;
+         align-items: flex-end;">
+            <a class="navbar-brand">
+                <h1 class="m-0 display-4 text-uppercase text-white">
+                    </i>
+                    <img src="./img/logo3.png" style="display: inline-block;vertical-align: top;width:auto;max-height:20%;max-width:80%;margin-left:20%">
+                    <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                         <span class="navbar-toggler-icon"  ></span>
+                     </button>
+                </h1>
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">About</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./message-from-the-dean.html" class="dropdown-item">Message from the Dean</a>
+                            <a href="./history-development.html" class="dropdown-item">History</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/full-time-professor" class="dropdown-item">Faculty</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/administrators" class="dropdown-item">Staff</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Students</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://oia.ntu.edu.tw/agreement/unit/college/44" class="dropdown-item">Admission</a>
+                            <a href="./jd-admissions.html" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/llm-admissions" class="dropdown-item">Master of Laws（LL.M.）</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/phd-admissions" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
+                            <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
+                            <a href="./summer-program.html" class="dropdown-item">Summer Program</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">International Office</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#event" class="dropdown-item">Events</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/about/collaboration" class="dropdown-item">Partner Schools</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-scholars" class="dropdown-item">Visiting Scholars</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-professors" class="dropdown-item">Visiting Professors</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Life at NTU Law</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/academic-calendar" class="dropdown-item">Academic Calendar</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/courses" class="dropdown-item">Courses</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/about/map-and-directions" class="dropdown-item">Map and Direction</a>
+                            <a href="#" class="dropdown-item">Student Events</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Research</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/research-centers" class="dropdown-item">Centers                            </a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/publications" class="dropdown-item">Publications</a>
+                            <a href="＃" class="dropdown-item">Projects</a>
+                            <a href="#" class="dropdown-item">Research Highlight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+    <!-- Blog Start -->
+    <div class="container-fluid container-fluid-content py-6 px-5 ">
+        <div style="display: flex;
+        flex-direction: column;align-items: center;">
+            <div class="itemFullText">
+                <p><span style="font-size: 14pt; font-family: verdana, geneva;"><strong><span style="text-decoration: underline;">Admission Requirements:</span></strong>&nbsp;</span>
+                </p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; color: #464646; font-size: 14pt;"></span></p>
+                <p><span style="font-size: 14pt; font-family: verdana, geneva;"> &nbsp;<span style="color: #464646;">As an affiliated institution to NTU, College&nbsp;of&nbsp;Law&nbsp;follows the&nbsp;university-wide policy every year on admission requirements, which are regularly issued and updated by our Office of International Affairs.&nbsp;</span>
+                    <span style="color: #464646;"><span style="color: #464646;">Furthermore, we don't collect any&nbsp;application&nbsp;materials&nbsp;on our own. The Office of International Affairs (OIA) is responsible for the application procedure. Please check out (OIA) website for more application details.<br>OIA Webpage Link</span>
+                    <span style="color: #464646;">－<a href="https://oia.ntu.edu.tw/en/apply-at-ntu/degree-student/eligibility-ch/eligibility-check-ch">https://oia.ntu.edu.tw/en/apply-at-ntu/degree-student/eligibility-ch/eligibility-check-ch</a>
+                            <a href="https://oia.ntu.edu.tw/study-at-ntu/degree-student/202021admission"><br></a>
+                            </span>
+                    </span>
+                    </span>
+                </p>
+                <p><span style="font-family: verdana, geneva; font-size: 14pt;"></span></p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong><span style="text-decoration: underline;"><span style="color: #464646;">Chinese Proficiency:</span></span>
+                    </strong>
+                    </span>
+                </p>
+                <p><span style="font-family: verdana, geneva; font-size: 14pt;"><span style="color: #464646;">The undergraduate law program is competitive and entails&nbsp;some&nbsp;sort of Chinese fluency. Although there are English conducted courses available, most of the courses at the undergraduate level are conducted in Chinese (Mandarin). Thus, applicants considering&nbsp;our&nbsp;B.L. degree should be aware that they will be required to take a Chinese performance assessment exam.</span><strong><span style="text-decoration: underline;"><br></span></strong>&nbsp;</span>
+                </p>
+                <p><span style="font-family: verdana, geneva; font-size: 14pt;"></span></p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong><span style="text-decoration: underline;"><span style="color: #464646;">Graduation Requirements:</span></span>
+                    </strong>
+                    </span>
+                </p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; color: #464646; font-size: 14pt;">Students&nbsp;enrolled in this&nbsp;program are&nbsp;anticipated&nbsp;to&nbsp;graduate&nbsp;within&nbsp;4&nbsp;years&nbsp;with&nbsp;the&nbsp;longest&nbsp;possible&nbsp;extension&nbsp;of&nbsp;2&nbsp;years (6 years in total) Total 136&nbsp;credits.</span></p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; font-size: 14pt;"><span style="color: #464646;"></span><span style="color: #464646;"><span style="color: #000000;">For further information on the curriculum, please consult:</span>&nbsp;</span>
+                    <span style="color: #316494;"><a href="https://nol.ntu.edu.tw/nol/coursesearch/index.php?lang=EN"><span style="color: #316494; text-decoration: none;">https://nol.ntu.edu.tw/nol/coursesearch/index.php?lang=EN</span></a>
+                    </span><span style="color: #464646;"></span></span>
+                </p>
+                <p style="background: white; border: none;"><span style="font-family: verdana, geneva; font-size: 14pt;"><span style="color: #464646;"> A detailed list of courses available every semester is provided on this website.</span></span>
+                </p>
+                <p><span style="font-family: verdana, geneva; font-size: 14pt;"><strong><span style="text-decoration: underline;"></span></strong>
+                    </span>
+                </p>
+                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>L.L.B Program Curriculum Requirements</strong></span></p>
+                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">For more accurate and up-to-date info, please check this website(Chinese interface only): http://140.112.161.31/NTUVoxCourse/index.php</span></p>
+                <table border="1" style="width: 100%;" cellspacing="0" cellpadding="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" align="center" valign="middle" width="177"><br><span style="font-family: verdana, geneva; font-size: 14pt;"> <strong>Courses</strong></span></td>
+                            <td colspan="3" width="541">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Divisions</strong></span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Legal Science</strong></span></p>
+                            </td>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Judicial Administration</strong></span></p>
+                            </td>
+                            <td width="188">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Financial Law</strong></span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>General Required Core Courses of NTU</strong></span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> <strong>(27 credits)</strong></span></p>
+                            </td>
+                            <td colspan="3" width="541">
+                                <div><span style="font-family: verdana, geneva; font-size: 14pt;">Chinese Literature(6),&nbsp;</span></div>
+                                <div><span style="font-family: verdana, geneva; font-size: 14pt;"> Foreign Language(6),&nbsp;</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Liberal Education Courses(15),&nbsp;</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Physical Fitness(1),&nbsp;</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Physical Activity and Exercise(3),&nbsp;</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Service Learning (Ⅰ),&nbsp;(Ⅱ), (Ⅲ)(0),&nbsp;</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Online English Program(Advanced English)(Ⅰ),&nbsp;(Ⅱ)(0) </span>
+                                </div>
+                                <p><span style="font-family: verdana, geneva; font-size: 14pt;">(Physical Education courses do not count towards graduation credits)</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Courses Required by the Department of Law</strong></span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> <strong>(63 credits)</strong></span></p>
+                            </td>
+                            <td colspan="3" width="541">
+                                <p><span style="text-decoration: underline; font-family: verdana, geneva; font-size: 14pt;">Freshman:&nbsp;</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Constitutional Law (4),</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-General Principles(3),&nbsp;</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Criminal Code-General Principles(I)(3),&nbsp;</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Criminal Code-General Principles(Ⅱ)(3)&nbsp;</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-General Provisions of Obligations(I)(3)</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" width="541">
+                                <p><span style="text-decoration: underline; font-family: verdana, geneva; font-size: 14pt;">Sophomore:</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Administrative Law(4)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Administrative Remedy Law(2)</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-Property(3)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-General Provisions of Obligations(Ⅱ)(3)</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-Kinds of Obligations(3)</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Civil Code-Family and Succession Law(3)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Criminal Code-Kinds of Offenses(4)</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> International Law(2)</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Jurispudence(2)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Legal History(2)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;">Negotiable Instrument and Payment Law(2)*<a id="_GoBack" name="_GoBack"></a></span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" width="541">
+                                <div><span style="text-decoration: underline; font-family: verdana, geneva; font-size: 14pt;">Junior:</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> General Principles on Commercial Law and Corporation(3)&nbsp;</span><br>
+                                    <span style="font-family: verdana, geneva; font-size: 14pt;"> Insurance Code(2)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Code of Civil Procedure (I), (Ⅱ)(6)</span><br><span style="font-family: verdana, geneva; font-size: 14pt;"> Code of Criminal Procedure(4)</span></div>
+                                <div><span style="font-family: verdana, geneva; font-size: 18.6667px;">Labor Law(2)*</span></div>
+                                <div><span style="font-family: verdana, geneva; font-size: 18.6667px;"></span><span style="font-family: verdana, geneva; font-size: 14pt;">Fair Trade Law(2)*&nbsp;&nbsp;</span></div>
+                                <div><span style="font-family: verdana, geneva; font-size: 14pt;"> Securities Regulation(2)*</span></div>
+                                <div>&nbsp;</div>
+                                <div><span style="font-family: verdana, geneva; font-size: 18.6667px;">*symbol means only need to choose two from the four courses</span></div>
+                                <div>&nbsp;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Total</strong><strong>&nbsp;Required Credits</strong></span></p>
+                            </td>
+                            <td colspan="3" width="541">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">90</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Credits for&nbsp;</strong><strong>Elective Courses Required&nbsp;</strong><strong>by&nbsp;</strong><strong>the Department of Law</strong></span></p>
+                            </td>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                            <td width="188">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Credits for&nbsp;</strong><strong>General Elective courses</strong></span></p>
+                            </td>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                            <td width="188">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">20</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="177">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;"><strong>Total Credits&nbsp;</strong><strong>for Graduation</strong></span></p>
+                            </td>
+                            <td colspan="3" width="541">
+                                <p align="center"><span style="font-family: verdana, geneva; font-size: 14pt;">130</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
+                    <li><span style="font-family: verdana, geneva; font-size: 14pt;">Labor Law(2)*, Negotiable Instrument and Payment Law(2)*, Fair Trade Law(2)*, Securities Regulation(2)*,&nbsp;of these 4 courses, select 2 courses (4 credits) to take.&nbsp;</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Blog End -->
+    <!-- Footer Start -->
+    <div class="container-fluid py-6 px-5 " style="background-color: #E0E0E0;">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Office Hours</p>
+                <p>Monday – Friday [ Taiwan Time ] 9am - 5pm </p>
+                <p style="color: #5E005E ;">Consultation Hours</p>
+                <p>Monday – Friday 9am-12am 1pm-5pm </p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Contact</p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://www.google.com.tw/maps/search/ntu+law/@25.0202386,121.5420263,17z/data=!3m1!4b1?hl=en ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <p style="color: #444444;">© 2023 All Rights Reserved, College of Law, National Taiwan University</p>
+            <!-- <p class="mb-0 " style="color: #444444;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p> -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <p class="first"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

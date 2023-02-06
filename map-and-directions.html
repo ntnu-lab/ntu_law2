@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>College of Law, National Taiwan University　</title>
+    <meta content="College of Law, National Taiwan University" name="keywords">
+    <meta content="College of Law, National Taiwan University" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid shadow-sm px-5 pe-lg-0" style="display: flex;
+     flex-direction: column;">
+        <div style="display: flex;margin-bottom:0;justify-content: right;padding:1%;margin-right:6%">
+            <div class="search-div">
+                <a style="margin-left: auto;padding-right: 10px;" href="https://www.ntu.edu.tw/english/" target="_blank">NTU  </a>
+                <a href="#">Contact</a>
+                <a><i  class="fa fa-1x  fa-search text-primary "></i> </a>
+                <!-- onclick="readmorefun('search')" -->
+                <a href="http://www.law.ntu.edu.tw/index.php">| 正體中文 </a>
+            </div>
+        </div>
+        <div class="col-sm-3" id="search" style="display:none;">
+            <div class="w-30">
+                <div class="input-group" style="position: absolute;width:40%;right: 5%;top:55%;z-index:999">
+                    <input type="text" id="search-val" class="form-control border-light" style="padding: 15px 20px;" placeholder=""><button class="btn btn-primary px-3" onclick="searchvaluefun()">Search </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;display: flex;
+         align-items: flex-end;">
+            <a class="navbar-brand">
+                <h1 class="m-0 display-4 text-uppercase text-white">
+                    </i>
+                    <img src="./img/logo3.png">
+                    <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                         <span class="navbar-toggler-icon"  ></span>
+                     </button>
+                </h1>
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">About</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./message-from-the-dean.html" class="dropdown-item">Message from the Dean</a>
+                            <a href="./history-development.html" class="dropdown-item">History</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/full-time-professor" class="dropdown-item">Faculty</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/administrators" class="dropdown-item">Staff</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Students</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./admission.html" class="dropdown-item">Admission</a>
+                            <a href="./jd-admissions.html" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                            <a href="./llm-admissions.html" class="dropdown-item">Master of Laws（LL.M.）</a>
+                            <a href="./phd-admissions.html" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
+                            <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
+                            <a href="./summer-program.html" class="dropdown-item">Summer Program</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">International Office</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#event" class="dropdown-item">Events</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/about/collaboration" class="dropdown-item">Partner Schools</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-scholars" class="dropdown-item">Visiting Scholars</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-professors" class="dropdown-item">Visiting Professors</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Life at NTU Law</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./academic-calendar.html" class="dropdown-item">Academic Calendar</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/courses" class="dropdown-item">Courses</a>
+                            <a href="./map-and-directions.html" class="dropdown-item">Map and Direction</a>
+                            <a href="#" class="dropdown-item">Student Events</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Research</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/research-centers" class="dropdown-item">Centers                            </a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/publications" class="dropdown-item">Publications</a>
+                            <a href="＃" class="dropdown-item">Projects</a>
+                            <a href="#" class="dropdown-item">Research Highlight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+    <!-- Blog Start -->
+    <div class="container-fluid container-fluid-content py-6 px-5 ">
+        <div style="display: flex;
+        flex-direction: column;align-items: center;">
+            <div class="itemBody">
+
+                <!-- Plugins: BeforeDisplayContent -->
+
+                <!-- K2 Plugins: K2BeforeDisplayContent -->
+
+
+                <!-- Item text -->
+                <div class="itemFullText">
+                    <p><strong>Map of NTU College of Law</strong></p>
+                    <p><strong>Law Buildings</strong><br> There are two law buildings- Tsai Lecture Hall (Building 1) and Wan Tsai Research Hall (Building 2). Both buildings are located next to the XinHai Gate at the north point of the campus.</p>
+                    <p><img src="./img/School-Map.png" alt="" style="width: 80%;"></p>
+                    <p>For the complete locations of buildings and facilities, please see the<a href="http://map.ntu.edu.tw/ntu-eng.html" target="_blank">&nbsp;NTU campus map.</a></p>
+                    <blockquote>
+                        <p><strong>Public Transportation</strong>&nbsp;<br> National Taiwan University located right in the center of Taipei city where can be easy accessed by public transportation. You may arrive the Law buildings either by MRT or bus.</p>
+                    </blockquote>
+                    <blockquote>
+                        <ul>
+                            <li><strong>By MRT</strong><br> College of Law is located next to the XinHai Gate at the north point of the campus. By MRT, you may take Wenhu Line (Brown Line) to Technology Building Station and take a 10-minute walk along FuXing
+                                S. Road to FuXing-XinHai intersection, where the XinHai Gate is. The Tsai Lecture Hall will be on the left hand side of the Gate. Or you may take Songshan-Xindian Line (Green Line) to GongGuan Station and take a 15-minute
+                                walk across the campus.</li>
+                        </ul>
+                    </blockquote>
+                    <p><img src="./img/mrt.png" alt="" width="770" height="700"></p>
+                    <p><strong>Metro Taipei Info:</strong><a href="http://english.metro.taipei/" target="_blank">&nbsp;http://english.metro.taipei/</a></p>
+                    <p><strong>By Bus</strong><br> You can also arrive College of Law by buses at HePing Senior High School, Youth Activity Center, Fuxing South Road Intersection, and Gongguan Station.</p>
+                    <table border="1" style="width: 100%;" cellspacing="1" cellpadding="2" align="center">
+                        <tbody>
+                            <tr>
+                                <td align="center" valign="middle" bgcolor="#CCCCFF" width="217"><strong>Stop</strong></td>
+                                <td align="center" bgcolor="#CCCCFF" width="435"><strong>Buses Lines</strong></td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle" bgcolor="#FFFFFF" width="217">HePing Senior High School</td>
+                                <td valign="top" bgcolor="#FFFFFF" width="435">1、254、275、275 Sub、294、611、650、905、905 Sub、906、906 Sub、909、935、1032、1552、NK(Shuanghe)</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle" bgcolor="#FFFFFF" width="217">Youth Activity Center</td>
+                                <td valign="top" bgcolor="#FFFFFF" width="435">237、295、298、298 Shuttle</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle" bgcolor="#FFFFFF" width="217">Fuxing South RoadIntersection</td>
+                                <td valign="top" bgcolor="#FFFFFF" width="435">3、15、18、52、72、74、207、211、235、237、278、278 Shuttle、284、284 Express、295、662、663、680、Heping Main Line、Dunhua Main Line</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>Taipei Bus Info:</strong><br> English Website| <a href="https://ebus.gov.taipei/" target="_blank">https://ebus.gov.taipei/</a><br> Toll Free| 0800-00-5284</p>
+                    <p>Department Office Location<br> Students interested in attending our College are welcome to visit us during weekdays from 9 A.M to 5 P.M. Our Office is located on the 6th Floor of Tsai Lecture Hall. The office is able to help you with
+                        any admission questions you may have, assist with graduation requirements and provide consultation regarding all aspects of studying at College of Law. We do not organize campus tours. However, students are encouraged to explore
+                        the campus at their leisure.</p>
+                    <p>&nbsp;</p>
+                </div>
+
+
+                <div class="clr"></div>
+
+
+
+
+                <!-- Plugins: AfterDisplayContent -->
+
+                <!-- K2 Plugins: K2AfterDisplayContent -->
+
+                <div class="clr"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Blog End -->
+    <!-- Footer Start -->
+    <div class="container-fluid py-6 px-5 " style="background-color: #E0E0E0;">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Office Hours</p>
+                <p>Monday – Friday [ Taiwan Time ] 9am - 5pm </p>
+                <p style="color: #5E005E ;">Consultation Hours</p>
+                <p>Monday – Friday 9am-12am 1pm-5pm </p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Contact</p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://www.google.com.tw/maps/search/ntu+law/@25.0202386,121.5420263,17z/data=!3m1!4b1?hl=en ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <p style="color: #444444;">© 2023 All Rights Reserved, College of Law, National Taiwan University</p>
+            <!-- <p class="mb-0 " style="color: #444444;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p> -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <p class="first"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

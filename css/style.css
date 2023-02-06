@@ -449,3 +449,18 @@ a:hover {
     border: 1px solid #AFAFAF;
     padding: 10px;
 }
+
+.navbar img {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    max-height: 20%;
+    max-width: 80%;
+    margin-left: 20%
+}
+
+@media (max-width: 1000px) {
+    .navbar img {
+        margin-left: -10%
+    }
+}

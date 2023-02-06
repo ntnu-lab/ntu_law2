@@ -24,6 +24,27 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
+        .navbar img {
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+            max-height: 20%;
+            max-width: 80%;
+            margin-left: 20%
+        }
+        
+        .navbar span {
+            transform: scale(1.2);
+        }
+        
+        @media (max-width: 1000px) {
+            .navbar img {
+                margin-left: -3%;
+                max-height: 30%;
+                max-width: 100%;
+            }
+        }
+        
         .navbar-top {
             display: flex;
             margin-bottom: 0;

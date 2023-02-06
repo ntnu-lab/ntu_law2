@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>College of Law, National Taiwan University　</title>
+    <meta content="College of Law, National Taiwan University" name="keywords">
+    <meta content="College of Law, National Taiwan University" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid shadow-sm px-5 pe-lg-0" style="display: flex;
+     flex-direction: column;">
+        <div style="display: flex;margin-bottom:0;justify-content: right;padding:1%;margin-right:6%">
+            <div class="search-div">
+                <a style="margin-left: auto;padding-right: 10px;" href="https://www.ntu.edu.tw/english/" target="_blank">NTU  </a>
+                <a href="#">Contact</a>
+                <a><i  class="fa fa-1x  fa-search text-primary "></i> </a>
+                <!-- onclick="readmorefun('search')" -->
+                <a href="http://www.law.ntu.edu.tw/index.php">| 正體中文 </a>
+            </div>
+        </div>
+        <div class="col-sm-3" id="search" style="display:none;">
+            <div class="w-30">
+                <div class="input-group" style="position: absolute;width:40%;right: 5%;top:55%;z-index:999">
+                    <input type="text" id="search-val" class="form-control border-light" style="padding: 15px 20px;" placeholder=""><button class="btn btn-primary px-3" onclick="searchvaluefun()">Search </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;display: flex;
+         align-items: flex-end;">
+            <a class="navbar-brand">
+                <h1 class="m-0 display-4 text-uppercase text-white">
+                    </i>
+                    <img src="./img/logo3.png">
+                    <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                         <span class="navbar-toggler-icon"  ></span>
+                     </button>
+                </h1>
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">About</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./message-from-the-dean.html" class="dropdown-item">Message from the Dean</a>
+                            <a href="./history-development.html" class="dropdown-item">History</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/full-time-professor" class="dropdown-item">Faculty</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/administrators" class="dropdown-item">Staff</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Students</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://oia.ntu.edu.tw/agreement/unit/college/44" class="dropdown-item">Admission</a>
+                            <a href="./jd-admissions.html" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                            <a href="./llm-admissions.html" class="dropdown-item">Master of Laws（LL.M.）</a>
+                            <a href="./phd-admissions.html" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
+                            <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
+                            <a href="./summer-program.html" class="dropdown-item">Summer Program</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">International Office</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#event" class="dropdown-item">Events</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/about/collaboration" class="dropdown-item">Partner Schools</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-scholars" class="dropdown-item">Visiting Scholars</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-professors" class="dropdown-item">Visiting Professors</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Life at NTU Law</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./academic-calendar.html" class="dropdown-item">Academic Calendar</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/courses" class="dropdown-item">Courses</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/about/map-and-directions" class="dropdown-item">Map and Direction</a>
+                            <a href="#" class="dropdown-item">Student Events</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Research</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/research-centers" class="dropdown-item">Centers                            </a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/publications" class="dropdown-item">Publications</a>
+                            <a href="＃" class="dropdown-item">Projects</a>
+                            <a href="#" class="dropdown-item">Research Highlight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+    <!-- Blog Start -->
+    <div class="container-fluid container-fluid-content py-6 px-5 ">
+        <div style="display: flex;
+        flex-direction: column;align-items: center;">
+            <div class="itemFullText">
+                <p><strong><span style="text-decoration: underline;">Admission Requirements</span></strong></p>
+                <p>&nbsp;</p>
+                <p>Ph. D degree is offered to students holding a master degree in law. Application requirements are the same as in the LL.M. program. Additionally, applicants should hand in their master thesis with an abstract. PLEASE NOTE: the proposal
+                    and language ability is given greater importance in the Ph. D application.</p>
+                <p>&nbsp;</p>
+                <p>For more accurate and up-to-date details , please check this website: <a href="https://oia.ntu.edu.tw/en/apply-at-ntu/degree-student/eligibility-ch/eligibility-check-ch">https://oia.ntu.edu.tw/en/apply-at-ntu/degree-student/eligibility-ch/eligibility-check-ch</a>
+                    <a href="https://oia.ntu.edu.tw/en/apply-at-ntu/degree-student/eligibility-ch/eligibility-check-ch" target="_blank"><br></a>
+                </p>
+                <p>&nbsp;</p>
+                <p><strong><span style="text-decoration: underline;">Graduation Requirements</span></strong></p>
+                <p><strong>A:Thesis Supervisor Application Requirements</strong><strong><br> </strong><strong>1.</strong>&nbsp;Students should register their thesis supervisor and the thesis title before the end of the second month in the second school year.
+                    Students can only register for the degree examination at least one year after they have actually registered the thesis supervisor.<br> <strong>2.</strong>&nbsp;Students’ thesis supervisors should be professors of NTU Law School, and
+                    the thesis title should be the supervisor’s specialized or related area.&nbsp;<br> <strong>3.</strong>&nbsp;Students who wish to engage adjunct professors as the thesis supervisor should at the same time engage full-time professors
+                    to joint instruct as well. In rare cases when engaging an adjunct professor to instruct alone is necessary; the student should submit application form beforehand and state the reason. The application must be passed by the course committee.</p>
+                <p>&nbsp;</p>
+                <table border="1" style="width: 100%;" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" bgcolor="white" width="109">
+                                <p align="center">Forms</p>
+                            </td>
+                            <td valign="top" bgcolor="white" width="736">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/A1%20Doctoral%20Graduate%20Form%20for%20Dissertation%20Advisor%20Agreement.odt">Ph. D. Dissertation Instructor Application Form</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" bgcolor="white" width="736">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/A2%20Doctoral%20Graduate%20Application%20Form%20for%20Adjunct%20Professors%20as%20the%20Sole%20Advisor.odt">Ph. D. Dissertation Instructor Application Form for Adjunct Professor alone</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" bgcolor="white" width="736">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/A3%20Doctoral%20Graduate%20Application%20Form%20for%20Advisor%20from%20Other%20Division.odt">Ph. D. Dissertation Instructor Application Form for Professor outside NTU</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&nbsp;</p>
+                <p><strong>B:Credits requirement<br> </strong>Students are required to obtain 18 credits towards their graduation. The credits can be from D code (exclusively for doctoral students), M code (for graduate students), or U code (shared by graduate
+                    students and senior undergraduates). PLEASE NOTE: credits of other Undergraduate Admission courses aside from the U code, second foreign language courses, or selected readings of foreign language jurisprudence will not count towards
+                    graduation.
+                </p>
+                <p>&nbsp;</p>
+                <table border="1" style="width: 100%;" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td bgcolor="white" width="128">
+                                <p align="center">Form</p>
+                            </td>
+                            <td valign="top" bgcolor="white" width="717">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/B1%20Application%20Form%20for%20Doctoral%20Graduate%20Selecting%20the%20Course%20Provided%20by%20Other%20Grad%20%20Inst.odt">Application Form for Ph. D. Students Taking Courses Not Offered by NTU Law School</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&nbsp;</p>
+                <p><strong>C:</strong><strong>&nbsp;Academic Subject Examination<br> </strong><strong>1.</strong>&nbsp;Students should apply for an academic subject exam before the week of mid-term exam every semester.<br> <strong>2.</strong>&nbsp;Students
+                    should attach an application and a transcript of academic records.</p>
+                <p><strong>3.</strong>&nbsp;Thesis supervisor should assign two LL.M. degree courses given by NTU Law School as examination subjects.</p>
+                <p>&nbsp;</p>
+                <table border="1" style="width: 842px;" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td valign="top" bgcolor="white" width="128">
+                                <p align="center">Form</p>
+                            </td>
+                            <td valign="top" bgcolor="white" width="714">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/C1%20Application%20Form%20for%20Ph.%20D.%20Program%20Academic%20Subject%20Examination.odt">Application Form for&nbsp;Subject Exams</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&nbsp;</p>
+                <p><strong>D:</strong><strong>&nbsp;Ph. D Candidacy<br> </strong>Before the semester of their graduation and oral defense of their dissertation, students must apply to be a doctoral candidate by submitting the following documentation:</p>
+                <p>(1) Transcript of academic records (with the required 18 credits finished)</p>
+                <p>(2) Copy of supervisor application form</p>
+                <p>(3) Certification of having passed the written exam</p>
+                <p>(4) Lists of published essays and copies of them. The list must consist of at least 2 essays, which must be published in a journal with peer review or academic seminar.</p>
+                <p>(5) Certification of attendance at dissertation seminar in NTU Law School</p>
+                <p>(6) Certification of attendance of at least 10 academic activities held by NTU Law School.</p>
+                <p>(7) Evaluation of the applicant’s plan on dissertation by the supervisor</p>
+                <p>&nbsp;</p>
+                <p><strong>F:</strong><strong>&nbsp;Research Plan of Dissertation<br> </strong>Additionally, within the same semester students must file their research plan of dissertation for a review. They will also have to hand in certification of having
+                    published at least 2 essays in a peer reviewed journal, as well as certification of having substantially assisted teaching.<br> <strong>1.</strong>&nbsp;Students should file their research plan of dissertation for a review one semester
+                    before their degree examination.&nbsp;<br> <strong>2.</strong>&nbsp;After NTU Law School received research plan of dissertation, the thesis supervisor should invite two teachers in the area of relevant expertise, inside and outside
+                    of NTU Law School each, to review the research plan of dissertation.<br> <strong>3.</strong>&nbsp;Ph. D candidates should write their dissertations in accordance with the opinion of the steering committee.</p>
+                <p>&nbsp;</p>
+                <table border="1" style="width: 776px;" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" bgcolor="white" width="129">
+                                <p align="center">Forms</p>
+                            </td>
+                            <td valign="top" bgcolor="white" width="647">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/F1%20Member%20of%20Doctoral%20Dissertation%20Advisory%20Committee%20Agreement%20Form.odt">Advisory Committee Application Form for Ph.D. Dissertation</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" bgcolor="white" width="647">
+                                <p><a href="/images/學生專區/PhD%20student/英文表格/F2%20The%20Doctors%20Dissertation%20Project%20Evaluation%20Sheet.odt">Comments and Suggestion Form for Ph. D. Dissertation Plan</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>&nbsp;</p>
+                <p><strong>G:</strong><strong>&nbsp;Submission of Dissertation Draft<br> </strong>Before Ph. D students start writing their dissertations, they should note that NTU Law School accepts dissertations written in foreign language, subject to
+                    the approval of the Course Committee. An abstract written in Chinese should be submitted together with the dissertation on the oral defense if the dissertation is written in foreign language.&nbsp;<br> Before the semester that students
+                    plan to graduate, Ph. D candidates must select “Dissertation (Ph. D.)” in the NTU Course selection system. PLEASE NOTE: students are required to study for at least four semesters in order to receive a doctoral degree, which means the
+                    oral defense can only take place after the fourth semester of the study.&nbsp;<br> <strong>1.</strong>&nbsp;Since 2005 academic year, applicant will also have to hand in two copies of the first draft of the dissertation approved by
+                    the supervisor, together with the electronic file of an 5000 word abstract within five days once the semester starts.<br> <strong>2.</strong>&nbsp;A committee will be gathered to review the dissertation and the abstract, and decide
+                    whether the Ph. D candidate is entitled to defend his/her dissertation. If the committee decides not to grant the qualification, the candidate has one chance to revise the dissertation draft in three months and hand it in for revision
+                    again. If he/she still fails to pass the review for the second time, he/she won’t have another chance in the same semester, and will have to wait until the following semester.<br> <strong>3.</strong>&nbsp;The choice of persons of committee
+                    members for students enrolled before 2005 academic year will be suggested by NTU Law School course committee and engaged by chairman.</p>
+                <p>&nbsp;</p>
+                <p><strong>H:</strong><strong>&nbsp;Seminar and Oral Defense (Viva voce) of Dissertation</strong><br> <strong>1. Application</strong></p>
+                <p>(1) Before November 30th&nbsp;for the first term; before April 30th&nbsp;for the second term</p>
+                <p>(2) Please go to myNTU website to enroll in the “Online Application System for the Oral Thesis/ Dissertation Defense” (https://gra103.aca.ntu.edu.tw/degree/), print the application form and have it signed by the instructor then hand it
+                    to the office of NTU College of Law with your academic transcript.<br> <strong>2. Thesis Seminar</strong></p>
+                <p>(1) Before the oral defense, the Ph. D candidate must host a dissertation seminar, in which his/her dissertation is openly discussed and given advice. The minutes of the seminar will be a requirement of graduation. The thesis seminar must
+                    be before December 15th&nbsp;for the first term; before May 15th&nbsp;for the second term.</p>
+                <p>(2)Students should announce the thesis seminar 2 weeks before the seminar takes place, and must hand in the Minutes of thesis seminar afterward. The minutes have to be at least one-page long and signed by more than 7 participants.)<br>                    <strong>3.</strong>&nbsp;A Ph. D candidate must discuss with his/her supervisor the composition of the examining committee. The examination committee has to be composed of five to seven examiners, including the dissertation supervisor.
+                    The list of members must be submitted to Office of College of Law and examined by the College within a month after the semester starts.&nbsp;(The thesis seminar must be before December 15th&nbsp;for the first term; before May 15th&nbsp;for
+                    the second term.)<br> <strong>4.</strong>&nbsp;Students should take the letter of appointment and invitation from the office of NTU College of Law, and hand them to the defense committee together with the oral defense version dissertation
+                    a week before the oral defense.<br> <strong>5.</strong>&nbsp;The defense should be before January 31st&nbsp;for the first term and before July 31st&nbsp;for the second term. On the day of oral defense, there should be an appointed
+                    person to collect the receipt, the oral defense fee for the oral defense committee, and the school transcript from the office of College of Law. Students should prepare the Doctoral Dissertation and Oral Defense Qualification Letter
+                    themselves.
+                    <br> <strong>6.</strong>&nbsp;If the defense cannot be held on time within the regulated examination time, please revoke the defense. The revoke should be taken place before January 31st&nbsp;for the first term, and before July 31st&nbsp;for
+                    the second term. PLEASE NOTE: A Ph. D student has to pass the oral defense within two attempts. And if he/she applies online but the oral defense doesn’t take place in the end of the day, it will be considered as failing one chance.
+                    Therefore, if Ph. D candidate cannot hold his/her oral defense, he/she must file an application to cancel the defense before the end of the semester. This point is extremely important because if a Ph. D candidate fails both of the
+                    chances, he/she will be disqualified from pursuing the degree.<br> <strong>7.&nbsp;</strong>Students who passed the oral defense but wish not to graduate in the term should complete the application form&nbsp;signed by the thesis instructor,
+                    and hand it to the office of NTU College of Law.</p>
+                <p>The application time is from the beginning of classes to January 31ST&nbsp;for the first term, and from the beginning of classes to July 31stfor the second term.</p>
+                <p>In this situation, please do not hand the thesis to the library nor upload the thesis file online.<br> <strong>8.</strong><strong>&nbsp;Handing in the Thesis and Graduation Procedures</strong><br> (1)If the Ph. D candidate successfully
+                    passes the oral examination, he/she will have to upload the dissertation onto the library website and hand in paper copies of the dissertation before the designated date.&nbsp;After all the procedures and formalities are done, students
+                    can go and receive the graduation certificate from the Office of Academic Affairs.<br> (2) Ph. D candidate who passed the degree examination could receive&nbsp;the tassel turning on the stage&nbsp;in the graduation ceremony held by
+                    NTU in the second semester of the graduating year. Please mind the notification from NTU Law College administration office. (The graduation ceremony date can be different from year. Please mind the e-mail sent from NTU Law College
+                    administration office.)</p>
+                <p>&nbsp;</p>
+                <p>For further information on the curriculum, please consult:<br> <a href="https://nol.ntu.edu.tw/nol/coursesearch/index.php?lang=EN" target="_blank">https://nol.ntu.edu.tw/nol/coursesearch/index.php?lang=EN</a>&nbsp;<br> A detailed list
+                    of courses available every semester is provided on this website.</p>
+                <p>Come to the administration office for more documents you would need.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Blog End -->
+    <!-- Footer Start -->
+    <div class="container-fluid py-6 px-5 " style="background-color: #E0E0E0;">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Office Hours</p>
+                <p>Monday – Friday [ Taiwan Time ] 9am - 5pm </p>
+                <p style="color: #5E005E ;">Consultation Hours</p>
+                <p>Monday – Friday 9am-12am 1pm-5pm </p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Contact</p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://www.google.com.tw/maps/search/ntu+law/@25.0202386,121.5420263,17z/data=!3m1!4b1?hl=en ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <p style="color: #444444;">© 2023 All Rights Reserved, College of Law, National Taiwan University</p>
+            <!-- <p class="mb-0 " style="color: #444444;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p> -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <p class="first"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

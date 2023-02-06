@@ -460,12 +460,11 @@
     }
     
     .navbar span {
-        transform: scale(1.2);
+        transform: scale(2);
     }
     
     @media (max-width: 1000px) {
         .navbar img {
-            margin-left: -3%;
             max-height: 30%;
             max-width: 100%;
         }
@@ -484,6 +483,5 @@
             display: flex;
             margin-bottom: 0;
             justify-content: right;
-            margin-right: 0%
         }
     }

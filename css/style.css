@@ -499,3 +499,65 @@
             justify-content: right;
         }
     }
+    
+    .staff_category_title {
+        border-bottom: 2px solid #000;
+        margin-bottom: 35px;
+        color: #CA7F3B;
+        font-family: 'Crimson Text', serif;
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .short_yellow_line {
+        width: 200px;
+        margin: 30px 0;
+        border: 1px solid #CA7F3B;
+        background-color: #CA7F3B;
+    }
+    
+    .content_text,
+    .sorting_list {
+        width: 100%;
+        max-width: 3000px;
+    }
+    
+    .staffimg {
+        width: 200px;
+        float: left;
+        padding-top: 5px;
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        border: 1px solid #737373;
+        background-color: #FFFFFF;
+    }
+    
+    .stafflist {
+        width: 100%;
+        display: block;
+        float: left;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #9D9D9D;
+        margin-right: 1%;
+        font-size: 16px !important;
+    }
+    
+    div.itemFullText h3 {
+        margin: 0;
+        padding: 16px 0 4px 0;
+    }
+    
+    .stafflist h3 {
+        padding-top: 5px !important;
+        background-color: #701526;
+        color: #fff;
+        font-weight: bolder;
+        margin-bottom: 10px !important;
+    }

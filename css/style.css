@@ -528,6 +528,13 @@
         max-width: 3000px;
     }
     
+    .staff p.description,
+    .student p.description {
+        margin-top: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4em;
+    }
+    
     .staffimg {
         width: 200px;
         float: left;

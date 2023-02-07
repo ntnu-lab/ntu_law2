@@ -517,6 +517,11 @@
         background-color: #CA7F3B;
     }
     
+    .staff h3 {
+        font-family: 'Crimson Text', serif;
+        color: #5E005E
+    }
+    
     .content_text,
     .sorting_list {
         width: 100%;

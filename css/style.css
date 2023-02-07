@@ -503,9 +503,9 @@
     .staff_category_title {
         border-bottom: 2px solid #000;
         margin-bottom: 35px;
-        color: #CA7F3B;
+        color: #af8a3a;
         font-family: 'Crimson Text', serif;
-        font-size: 2em;
+        font-size: 1.6em;
         font-weight: 700;
         text-transform: uppercase;
     }
@@ -513,13 +513,33 @@
     .short_yellow_line {
         width: 200px;
         margin: 30px 0;
-        border: 1px solid #CA7F3B;
-        background-color: #CA7F3B;
+        border: 1px solid #af8a3a;
+        background-color: #af8a3a;
+    }
+    
+    .staff-col {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 5%
     }
     
     .staff h3 {
         font-family: 'Crimson Text', serif;
         color: #5E005E
+    }
+    
+    @media (max-width: 650px) {
+        .short_yellow_line {
+            width: 100%;
+        }
+    }
+    
+    .short_yellow_line {
+        width: 200px;
+        margin: 30px 0;
+        border: 1px solid #CA7F3B;
+        background-color: #CA7F3B;
     }
     
     .content_text,

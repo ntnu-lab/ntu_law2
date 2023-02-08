@@ -172,14 +172,6 @@
             border-radius: 100px;
         }
         
-        .service-item .service-icon i {
-            transition: .2s;
-        }
-        
-        .service-item:hover .service-icon i {
-            font-size: 30px;
-        }
-        
         .portfolio-item {
             margin-bottom: 60px;
         }

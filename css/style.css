@@ -1,7 +1,9 @@
         /********** Template CSS **********/
         
         body {
-            font-family: 'Apple LiGothic Medium', '\5FAE\8EDF\6B63\9ED1\9AD4', Helvetica, Arial, sans-serif;
+            /* font-family: 'Apple LiGothic Medium', '\5FAE\8EDF\6B63\9ED1\9AD4', Helvetica, Arial, sans-serif;
+             */
+            font-family: 'Crimson Text', serif;
             line-height: 1.6;
             font-size: 16px;
             font-weight: 400;
@@ -424,10 +426,10 @@
             margin-right: 6%
         }
         
-        @media (max-width: 1000px) {
+        @media (min-width: 400px) {
             .search-div a {
                 padding: 5px;
-                font-size: 30px;
+                font-size: 15px;
             }
             .search-div {
                 display: flex;
@@ -446,7 +448,7 @@
             color: #000000;
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 70%;
         }
         
         .itemFullText td {
@@ -454,25 +456,25 @@
             padding: 10px;
         }
         
-        .navbar img {
-            display: inline-block;
-            vertical-align: top;
-            width: auto;
-            max-height: 20%;
-            max-width: 80%;
-            margin-left: 20%
-        }
-        
-        .navbar span {
-            transform: scale(2);
-        }
-        
-        @media (max-width: 1000px) {
+        @media (min-width: 400px) {
             .navbar img {
                 max-height: 30%;
-                max-width: 100%;
                 margin-left: 0%;
                 transform: scale(1.1);
+            }
+            .navbar span {
+                transform: scale(2);
+            }
+        }
+        
+        @media (min-width: 800px) {
+            .navbar img {
+                display: inline-block;
+                vertical-align: top;
+                width: auto;
+                max-height: 20%;
+                max-width: 80%;
+                /* margin-left: 20% */
             }
         }
         

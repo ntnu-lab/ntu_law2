@@ -456,13 +456,38 @@
             padding: 10px;
         }
         
+        .navbar img {
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+            max-height: 20%;
+            max-width: 80%;
+            /* margin-left: 20% */
+        }
+        
         .itemFullText p,
         .itemFullText span,
         .itemFullText a {
-            font-size: 30px;
+            font-size: 20px;
         }
         
-        @media (min-width: 320px) {
+        @media (max-width: 1140px) {
+            .navbar img {
+                max-height: 30%;
+                margin-left: 0%;
+                transform: scale(1.1);
+            }
+            .navbar span {
+                transform: scale(2);
+            }
+            .itemFullText p,
+            .itemFullText span,
+            .itemFullText a {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
             .navbar img {
                 max-height: 30%;
                 margin-left: 0%;
@@ -475,22 +500,6 @@
             .itemFullText span,
             .itemFullText a {
                 font-size: 25px;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .navbar img {
-                display: inline-block;
-                vertical-align: top;
-                width: auto;
-                max-height: 20%;
-                max-width: 80%;
-                /* margin-left: 20% */
-            }
-            .itemFullText p,
-            .itemFullText span,
-            .itemFullText a {
-                font-size: 20px;
             }
         }
         
@@ -529,20 +538,34 @@
         
         .staff-col {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             width: 100%;
             margin: 2%
+        }
+        
+        .staff-col img {
+            width: 45%;
+            height: 15%;
+            margin: 1% 2%
+        }
+        
+        @media (min-width: 768px) {
+            .staff-col {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 2%
+            }
+            .staff-col img {
+                width: 15%;
+                height: 15%;
+                margin: 1% 2%
+            }
         }
         
         .staff-col h3 {
             color: #5E005E;
             margin: 0
-        }
-        
-        .staff-col img {
-            width: 15%;
-            height: 15%;
-            margin: 1% 2%;
         }
         
         @media (max-width: 650px) {

@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>College of Law, National Taiwan University　</title>
+    <meta content="College of Law, National Taiwan University" name="keywords">
+    <meta content="College of Law, National Taiwan University" name="description">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        div.staff_category_title {
+            margin: 0;
+            padding: 0
+        }
+        
+        hr.short_yellow_line {
+            margin: 15px;
+            padding: 0
+        }
+        
+        .staff_category_list {
+            width: 90%;
+            text-align: left;
+        }
+        
+        .staff_category_list a {
+            display: inline-block;
+            padding-top: 3px;
+            padding-right: 15px;
+            margin-right: 15px;
+            border-right: 2px solid #000;
+            margin-bottom: 15px;
+            color: #af8a3a;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            line-height: 0.9;
+            letter-spacing: 1px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .staff_category_list a:last-child {
+            border-right: 0;
+        }
+        
+        .staff_category_list {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-left: 10%;
+            margin-top: 20px;
+            margin-bottom: -7%
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid shadow-sm px-5 pe-lg-0" style="display: flex;
+     flex-direction: column;">
+        <div>
+            <div class="search-div">
+                <a style="margin-left: auto;padding-right: 10px;" href="https://www.ntu.edu.tw/english/" target="_blank">NTU  </a>
+                <a href="#">Contact</a> <a onclick="readmorefun('search')"><i  class="fa fa-1x  fa-search text-primary "></i> </a>
+                <a href="http://www.law.ntu.edu.tw/index.php">| 正體中文 </a>
+            </div>
+        </div>
+        <div class="col-sm-3" id="search" style="display:none;">
+            <div class="w-30">
+                <div class="input-group" style="position: absolute;width:40%;right: 5%;top:55%;z-index:999">
+                    <input type="text" id="search-val" class="form-control border-light" style="padding: 15px 20px;" placeholder=""><button class="btn btn-primary px-3" onclick="searchvaluefun()">Search </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0" style="padding-right: 6%;display: flex;
+         align-items: flex-end;">
+            <a class="navbar-brand">
+                <h1 class="m-0 display-4 text-uppercase text-white">
+                    </i>
+                    <a href="./index.html"> <img href="./index.html" src="./img/logo3.png"></a>
+                    <button style="padding:0;" onclick="function5()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                         <span class="navbar-toggler-icon"  ></span>
+                     </button>
+                </h1>
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">About</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./message-from-the-dean.html" class="dropdown-item">Message from the Dean</a>
+                            <a href="./history-development.html" class="dropdown-item">History</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/full-time-professor" class="dropdown-item">Faculty</a>
+                            <a href="./staff.html" class="dropdown-item">Staff</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Students</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./admission.html" class="dropdown-item">Admission</a>
+                            <a href="./jd-admissions.html" class="dropdown-item">Bachelor of Laws（LL.B.）</a>
+                            <a href="./llm-admissions.html" class="dropdown-item">Master of Laws（LL.M.）</a>
+                            <a href="./phd-admissions.html" class="dropdown-item">Doctor of Philosophy in Laws (PhD)</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/exchange-program" class="dropdown-item">Incoming Exchange Program</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/admissions/joint-degree-admissions" class="dropdown-item">Dual Degree</a>
+                            <a href="https://oia.ntu.edu.tw/en/internationalstudents/visiting/overview" class="dropdown-item">Visiting Students</a>
+                            <a href="./summer-program.html" class="dropdown-item">Summer Program</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">International Office</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#event" class="dropdown-item">Events</a>
+                            <a href="./partner-school.html" class="dropdown-item">Partner Schools</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-scholars" class="dropdown-item">Visiting Scholars</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/peoples/visiting-professors" class="dropdown-item">Visiting Professors</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Life at NTU Law</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="./academic-calendar.html" class="dropdown-item">Academic Calendar</a>
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/courses" class="dropdown-item">Courses</a>
+                            <a href="./map-and-directions.html" class="dropdown-item">Map and Direction</a>
+                            <a href="#" class="dropdown-item">Student Events</a>
+                            <a href="#" class="dropdown-item">Videos</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black;font-size: 1rem;">Research</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="http://www.law.ntu.edu.tw/index.php/academics-research/research-centers" class="dropdown-item">Centers                            </a>
+                            <a href="./publications.html" class="dropdown-item">Publications</a>
+                            <a href="＃" class="dropdown-item">Projects</a>
+                            <a href="#" class="dropdown-item">Research Highlight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+
+    <div class="staff_category_list">
+        <a href="#Asia">Asia</a>
+        <a href="#Europe">Europe</a>
+        <a href="#America">America</a>
+        <a href="#Oceania">Oceania</a>
+    </div>
+    <!-- Blog Start -->
+    <div class="container-fluid container-fluid-content py-6 px-5 ">
+        <div style="display: flex;flex-direction:column;">
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="Asia">亞洲區 Asia/日本 Japan</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>大阪經濟法科大學 Osaka University of Economics & Law</h3>
+                            <p>法學部 Faculty of Law <br> #交換學生 #交換教授
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>北海道大學 Hokkaido University
+                            </h3>
+                            <p>大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>名古屋大學 Nagoya University
+                            </h3>
+                            <p>大學院法學研究科暨法學部 School of Law & Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>名古屋名城大學 Meijo University </h3>
+                            <p>大學院法務研究科 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>早稻田大學 Waseda University</h3>
+                            <p>大學院法務研究科 Faculty of Law<br> 大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>一橋大學 Hitotsubashi University</h3>
+                            <p>大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>京都大學 Kyoto University</h3>
+                            <p>大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>東北大學 Tohoku University</h3>
+                            <p>大學院法學研究科 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>立命館大學 Ritsumeikan University</h3>
+                            <p>大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>中央大學 Chuo University</h3>
+                            <p>法學部 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>大阪大學 Osaka University</h3>
+                            <p>大學院法學研究科、大學院高等 司法研究科、法學部 Graduate school of law and politics/law school/school of law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>慶應義塾大學 Keio University</h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>明治大學 Meiji University</h3>
+                            <p>法學部、大學院法學研究科 School of Law Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>九州大學 Kyushu University</h3>
+                            <p>大學院法學研究科 Graduate School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/蒙古 Mongolia</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>國立蒙古大學 National University of Mongolia
+                            </h3>
+                            <p>法律學院 School of Law<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/中國 China</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>中國人民大學 Renmin University of China</h3>
+                            <p>法學院 Law School<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>上海交通大學 Shanghai Jiao Tong University
+                            </h3>
+                            <p>凱原法學院 Koguan Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>武漢大學 Wuhan University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>清華大學 Tsinghua University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>華中科技大學 Huazhong University of Science & Technology</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>蘇州大學 Soochow University</h3>
+                            <p>王健法學院 Kenneth Wang School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>中山大學 Sun Yat-sen University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>北京大學 Peking University</h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>北京師範大學 Beijing Normal University</h3>
+                            <p>法學院暨刑事法律科學研究院 Law School & College for Criminal Law Science
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>浙江大學 Zhejiang University</h3>
+                            <p>光華法學院 Guanghua Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>香港大學 University of Hong Kong</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>廈門大學 Xiamen University</h3>
+                            <p>法學院 College of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>復旦大學 Fudan University</h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>南開大學 Nankai University</h3>
+                            <p>研究生院 Graduate school
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>香港中文大學 The Chinese University of Hong Kong</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>吉林大學 Jilin University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>香港城市大學 City University of Hong Kong
+                            </h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>華東政法大學 East China University of Political Science and Law</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>山東大學 ShanDong University</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>南京大學 NanJing University</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/馬來西亞 Malaysia</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>馬來亞大學 University of Malaya</h3>
+                            <p>法學院 Faculty of Law<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/泰國 Thailaid</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>朱拉隆功大學 Chulalongkorn University</h3>
+                            <p>法學院 Faculty of Law<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>泰國法政大學 Thammasat University</h3>
+                            <p>法學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/印度 India</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>印度大學法律學院 National Law School of India University</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>金德爾全球大學 Jindal Global University</h3>
+                            <p>法律學院 Jindal Global Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/韓國 Republic of Korea</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>首爾大學 Seoul National University</h3>
+                            <p>法律學院 College of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>亞洲大學校 Ajou University</h3>
+                            <p>法科大學 College of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>梨花女子大學 Ewha Womans University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>延世大學 Yonsei University</h3>
+                            <p>法學院 College of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>高麗大學 Korea University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/新加坡 Singapore</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>新加坡管理大學 Singapore Management University
+                            </h3>
+                            <p>
+                                法律學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/越南 Vietnam</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>河內法律大學 Hanoi University of Law</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/印尼 Indonesia</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>印尼加查馬達大學(日惹大學) Universitas Gadjah Mada</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">亞洲區 Asia/以色列 Israel</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>以色列希伯來大學 Hebrew University of Jerusalem
+                            </h3>
+                            <p>法學院 The Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="Europe">歐洲區 Europe/德國 Germany</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>漢堡大學 University of Hamburg</h3>
+                            <p>經濟法研究所 Institute for Economic Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>杜賓根大學 University of Tübingen</h3>
+                            <p>歐洲當代台灣研究中心 The European Research Center on Contemporary Taiwan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>魯耳波洪大學 Ruhr-University Bochum</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>德國海德堡大學 Heidelberg University</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>特里爾大學 Trier University</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>波昂大學 University of Bonn</h3>
+                            <p>法律與經濟學院 Faculty of Law and Economics
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>奧斯納布呂克大學 Osnabrück University</h3>
+                            <p>法律學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>漢堡博銳思法學院 Bucerius Law School Hamburg
+                            </h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>EBS 商法大學 EBS universität für wirtschaft und recht</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>漢堡大學 University of Hamburg,</h3>
+                            <p>法律學院 The Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>法蘭克福歌德大學 Goethe Universitat Frankfurt am Main</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>德國柏林自由大學 Freie University Berlin</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/荷蘭 Netherlands</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>荷蘭奈梅亨拉德伯德大學 Radboud University</h3>
+                            <p>法學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>荷蘭萊頓大學 Leiden University</h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/英國 United Kingdom</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>英國薩塞克斯大學 University of Sussex</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>倫敦瑪麗王后大學 Queen Mary University of London
+                            </h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/瑞士 Switzerland</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>紐夏特大學法學院 University of Neuchatel</h3>
+                            <p>法律學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>巴賽爾大學 University of Basel</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/烏克蘭 Ukraine</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>烏克蘭國立敖德薩法律大 學 Odessa I. I. Mechnikov National University</h3>
+                            <p>法學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/俄羅斯 Russia</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>遠東聯邦大學 Far Eastern Federal University
+                            </h3>
+                            <p>Federal State Autonomous Educational Institution of Higher Professional
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/捷克 Czech</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>馬薩里克大學 Masaryk University</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/法國 France</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>尚慕蘭里昂第三大學 Jean Moulin University Lyon 3</h3>
+                            <p>法律學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>雷恩第一大學 University of Rennes 1</h3>
+                            <p>法律及政治學院 Faculty of Law and Political sciences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/瑞典 Sweden</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>斯德哥爾摩大學 Stockholm University</h3>
+                            <p>法律學系 Department of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/西班牙 Spain</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>拉曼魯爾大學 Ramon Llull University</h3>
+                            <p>ESADE 法學院 ESADE Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">歐洲區 Europe/奧地利</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>維也納經濟大學 WU Vienna University of Economics and Business</h3>
+                            <p>Economics and Business
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="adjunt-assistant-professor">美洲區 America/美國 USA</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>西雅圖華盛頓大學 University of Washington</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>聖路易華盛頓大學 Washington University in St. Louis</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>美國凱斯西儲大學 Case Western Reserve University
+                            </h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>福德漢姆大學 Fordham University</h3>
+                            <p>法學院 School of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>伊利諾大學香檳分校 University of Illinois Urbana-Champaign
+                            </h3>
+                            <p>法學院 College of Law The Board of Trustees
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>韋恩州立大學 Wayne State University</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>加州大學哈斯汀法學院 UC Hastings College of the Law
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="America">美洲區 America/智利 Chile</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>智利大學 University of Chile</h3>
+                            <p>法學院 Faculty of Law
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <div class="staff_category_title" id="Oceania">大洋洲區 Oceania/澳大利亞 Australia</div>
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>雪梨大學 University of Sydney</h3>
+                            <p>法學院 Law School
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-col">
+                <img src="./img/staff/11.jpg" alt="" style="width: 20%;height:20%; margin:2%">
+                <div style="        width: 60%;">
+                    <hr class="short_yellow_line">
+                    <div class="staff_list_bycategory sorting_list">
+                        <div class="staff filter-entry  c-none r-none">
+                            <h3>雪梨科技大學 University of Technology Sydney
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    <!-- Blog End -->
+    <!-- Footer Start -->
+    <div class="container-fluid py-6 px-5 " style="background-color: #E0E0E0;">
+        <div class="row g-12 ">
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Office Hours</p>
+                <p>Monday – Friday [ Taiwan Time ] 9am - 5pm </p>
+                <p style="color: #5E005E ;">Consultation Hours</p>
+                <p>Monday – Friday 9am-12am 1pm-5pm </p>
+            </div>
+            <div class="col-lg-6 pe-lg-6 footer-content">
+                <p style="color: #5E005E ;">Contact</p>
+                <p><i class="fa fa-map-marker-alt me-2 "></i> No.1, Sec. 4, Roosevelt Road, Taipei City, 10617, Taiwan, R.O.C. <a href="https://www.google.com.tw/maps/search/ntu+law/@25.0202386,121.5420263,17z/data=!3m1!4b1?hl=en ">(MAP)</a></p>
+                <p><i class="fa fa-phone-alt me-2 "></i>TEL: +886 2 33668900 </p>
+                <p><i class="fa fa-phone-alt me-2 "></i>FAX: +886 2 33668904 </p>
+                <p><i class="fa fa-envelope me-2 "></i>e-mail: law@ntu.edu.tw</p>
+            </div>
+            <p style="color: #444444;">© 2023 All Rights Reserved, College of Law, National Taiwan University</p>
+            <!-- <p class="mb-0 " style="color: #444444;">Designed by <a href="https://htmlcodex.com ">HTML Codex</a></p> -->
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <p class="first"></p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

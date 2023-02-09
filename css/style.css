@@ -465,6 +465,11 @@
             .navbar span {
                 transform: scale(2);
             }
+            .itemFullText p,
+            .itemFullText span,
+            .itemFullText a {
+                font-size: 30px;
+            }
         }
         
         @media (min-width: 800px) {
@@ -475,6 +480,11 @@
                 max-height: 20%;
                 max-width: 80%;
                 /* margin-left: 20% */
+            }
+            .itemFullText p,
+            .itemFullText span,
+            .itemFullText a {
+                font-size: 20px;
             }
         }
         

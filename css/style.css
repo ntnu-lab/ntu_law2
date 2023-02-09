@@ -531,12 +531,17 @@
             display: flex;
             flex-direction: row;
             width: 100%;
-            margin-left: 5%
+            margin: 2%
         }
         
-        .staff h3 {
-            font-family: 'Crimson Text', serif;
+        .staff-col h3 {
             color: #5E005E
+        }
+        
+        .staff-col img {
+            width: 20%;
+            height: 20%;
+            margin-right: 2%
         }
         
         @media (max-width: 650px) {
